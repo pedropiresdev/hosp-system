@@ -1,0 +1,69 @@
+/* src/components/PacienteForm.css */
+.paciente-form {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.paciente-form .form-group {
+    margin-bottom: 15px;
+}
+
+.paciente-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.paciente-form input[type="text"],
+.paciente-form input[type="number"],
+.paciente-form textarea,
+.paciente-form select {
+    width: calc(100% - 22px); /* Ajusta para padding e border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.paciente-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.paciente-form .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.paciente-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.paciente-form button[type="submit"] {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+.paciente-form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.paciente-form .cancel-button {
+    background-color: #6c757d; /* Cinza */
+    color: white;
+}
+
+.paciente-form .cancel-button:hover {
+    background-color: #5a6268;
+}

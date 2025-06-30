@@ -1,0 +1,212 @@
+/* src/App.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.App-header {
+  background-color: #28a745; /* Verde Hospitalar */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #218838;
+}
+
+h1, h2 {
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.toolbar {
+  padding: 20px;
+  text-align: right;
+  border-bottom: 1px solid #eee;
+}
+
+.toolbar button {
+  background-color: #007bff; /* Azul */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.toolbar button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  background-color: #d4edda; /* Verde claro para sucesso */
+  color: #155724; /* Verde escuro */
+  border: 1px solid #c3e6cb;
+  text-align: center;
+}
+
+.message.error { /* Adicione uma classe para erros se quiser */
+  background-color: #f8d7da; /* Vermelho claro para erro */
+  color: #721c24; /* Vermelho escuro */
+  border: 1px solid #f5c6cb;
+}
+
+.form-section, .list-section {
+  padding: 20px;
+}
+
+/* Estilos para PacienteForm.css */
+.paciente-form {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.paciente-form .form-group {
+  margin-bottom: 15px;
+}
+
+.paciente-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.paciente-form input[type="text"],
+.paciente-form input[type="number"],
+.paciente-form textarea,
+.paciente-form select {
+  width: calc(100% - 22px); /* Ajusta para padding e border */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.paciente-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.paciente-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.paciente-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.paciente-form button[type="submit"] {
+  background-color: #28a745; /* Verde */
+  color: white;
+}
+
+.paciente-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.paciente-form .cancel-button {
+  background-color: #6c757d; /* Cinza */
+  color: white;
+}
+
+.paciente-form .cancel-button:hover {
+  background-color: #5a6268;
+}
+
+/* Estilos para PacienteList.css */
+.paciente-list-container {
+  overflow-x: auto; /* Para tabelas grandes em telas pequenas */
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.paciente-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.paciente-table th,
+.paciente-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.paciente-table th {
+  background-color: #e9ecef; /* Cinza claro */
+  font-weight: bold;
+  color: #495057;
+}
+
+.paciente-table tr:nth-child(even) {
+  background-color: #f8f9fa; /* Listras zebradas */
+}
+
+.paciente-table tr:hover {
+  background-color: #e2f2ff; /* Destaque ao passar o mouse */
+}
+
+.paciente-table .actions-column button {
+  background-color: #ffc107; /* Amarelo para Editar */
+  color: #333;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.paciente-table .actions-column button:hover {
+  background-color: #e0a800;
+}
+
+.paciente-table .actions-column .delete-button {
+  background-color: #dc3545; /* Vermelho para Remover */
+  color: white;
+}
+
+.paciente-table .actions-column .delete-button:hover {
+  background-color: #c82333;
+}
